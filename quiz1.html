@@ -129,4 +129,30 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function checkAnswer(answer) {
+            if (answer === "Nasi Padang") {
+                Swal.fire({
+                    icon: "success",
+                    title: "Jawaban Benar!",
+                    text: "Kamu berhasil menjawab pertanyaan ini.",
+                    confirmButtonText: "Quiz Selanjutnya",
+                    confirmButtonColor: "#000"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = "quiz2.html"
+                    }
+                })
+            } else {
+                Swal.fire({
+                    icon: "error",
+                    title: "Jawaban Salah!",
+                    text: "Coba cari lagi jawaban yang benar.",
+                    confirmButtonText: "Coba Lagi",
+                    confirmButtonColor: "#000"
+                })
+            }
+        }
+    </script>
 </body>
