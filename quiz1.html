@@ -88,7 +88,7 @@
 
         .nadhif-image {
             position: absolute;
-            right: 20px;
+            right: 30px;
             bottom: 0;
             width: 320px;
             height: auto;
@@ -105,6 +105,30 @@
             font-size: 14px;
             margin: 0;
             color: #555;
+        }
+
+        .particle {
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            border: 2px solid #111;
+            border-radius: 50%;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .particle.square {
+            border-radius: 2px;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.25;
+            }
+            50% {
+                transform: translateY(-25px) rotate(180deg);
+                opacity: 0.8;
+            }
         }
     </style>
 </head>
@@ -175,6 +199,22 @@
                     confirmButtonColor: "#000"
                 })
             }
+        }
+
+        const decorations = document.getElementById("decorations")
+        for (let i = 0; i < 15; i++) {
+            const particle = document.createElement("div")
+            particle.classList.add("particle")
+
+            if (i % 2 === 0) {
+                particle.classList.add("square")
+            }
+
+            particle.style.left = Math.random() * 100 + "%"
+            particle.style.top = Math.random() * 100 + "%"
+            particle.style.animationDelay = Math.random() * 3 + "s"
+            particle.style.animationDuration = 3 + Math.random() * 3 + "s"
+            decorations.appendChild(particle)
         }
     </script>
     <footer>
