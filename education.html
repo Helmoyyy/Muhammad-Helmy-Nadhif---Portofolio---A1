@@ -70,14 +70,73 @@
             box-shadow: 0 3px 10px rgba(72, 72, 72, 0.558);
         }
 
-        .deskripsi p {
+        .deskripsi-sd p {
             font-size: 16px;
             line-height: 1.5;
             color: #666;
             margin: 0;
         }
+
+        .deskripsi p {
+            max-width: 500px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+        }
+
         .education-section {
             padding: 15px 0;
+        }
+
+        .pondok-slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .pondok-track {
+            display: flex;
+            transition: transform 1s ease;
+        }
+
+        .pondok-slide {
+            flex: 0 0 20%;
+            padding: 3px;
+        }
+
+        .pondok-slide img {
+            width: 350px;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .kampus-slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .kampus-track {
+            display: flex;
+            transition: transform 1s ease;
+        }
+
+        .kampus-slide {
+            flex: 0 0 20%;
+            padding: 3px;
+        }
+
+        .kampus-slide img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 6px;
+            display: block;
         }
     </style>
 </head>
@@ -124,7 +183,7 @@
                     <img src="sd.jpg" alt="Generasi Berencana" class="foto-sd">
                 </div>
                 <div class="col-md-6">
-                    <div class="deskripsi">
+                    <div class="deskripsi-sd">
                         <h4>Elementary School: <span class="nama-sd">SD Negeri Mendawai 2 Sukamara</span></h4>
                         <p>
                             My educational journey began at SD Negeri Mendawai 2 Sukamara, where I built my early academic foundation and 
@@ -134,8 +193,212 @@
                     </div>
                 </div>
             </div>
+            <hr>
         </div>
     </section>
 
+    <div class="deskripsi text-center mt-3">
+        <h4>Islamic Boarding School: <span class="nama-sd">Pondok Pesantren Darul Hijrah</span></h4>
+        <p>
+            My journey at Pondok Pesantren Darul Hijrah became an important
+            part of my personal, academic, and spiritual development.
+            During my time there, I gained knowledge not only in religious 
+            studies and general academics, but also developed my Arabic and 
+            English language skills. 
+        </p>
+        <p>
+            Beyond the classroom, I was actively introduced to organizational 
+            activities, leadership, teamwork, and public speaking, which helped 
+            me become more confident in expressing ideas and interacting with others. 
+        </p>
+        <p>
+           Living and learning together with friends also taught me the importance 
+           of discipline, responsibility, independence, cooperation, and mutual 
+           support. These experiences shaped my character and became a valuable 
+           foundation for my journey in higher education. 
+        </p>
+    </div>
+    <div class="container">
+        <div class="pondok-slider">
+            <div class="pondok-track" id="pondokTrack">
+                <div class="pondok-slide">
+                    <img src="pondok1.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="pondok-slide">
+                    <img src="pondok2.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="pondok-slide">
+                    <img src="pondok3.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="pondok-slide">
+                    <img src="pondok4.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="pondok-slide">
+                    <img src="pondok5.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="pondok-slide">
+                    <img src="pondok6.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="pondok-slide">
+                    <img src="pondok7.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="pondok-slide">
+                    <img src="pondok8.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="pondok-slide">
+                    <img src="pondok9.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="pondok-slide">
+                    <img src="pondok10.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="pondok-slide">
+                    <img src="pondok11.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="pondok-slide">
+                    <img src="pondok12.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="pondok-slide">
+                    <img src="pondok13.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="pondok-slide">
+                    <img src="pondok14.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="pondok-slide">
+                    <img src="pondok15.jpg" alt="Darul Hijrah">
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="deskripsi text-center mt-3">
+        <h4>University: <span class="nama-sd">Universitas Lambung Mangkurat</span></h4>
+        <p>
+            My university journey began when I became a student of Computer Education at 
+            Universitas Lambung Mangkurat. Starting as a new student, I was introduced to 
+            a new learning environment that challenged me to become more independent, 
+            adaptable, and responsible. Throughout my first semesters, I explored various 
+            aspects of computer science and education, including programming, algorithms, 
+            databases, web development, and educational technology.
+        </p>
+        <p>
+            Now, as a third-semester student, I continue to develop both my technical and 
+            interpersonal skills through lectures, practical assignments, projects, and 
+            organizational experiences. Every semester has given me new challenges and 
+            opportunities to learn, collaborate, solve problems, and discover more about 
+            my interests in technology and education. This journey continues to shape my 
+            goals and prepare me for the next stages of my academic and professional 
+            development.
+        </p>
+    </div>
+    <div class="container">
+        <div class="kampus-slider">
+            <div class="kampus-track" id="kampusTrack">
+                <div class="kampus-slide">
+                    <img src="kampus1.jpeg" alt="Darul Hijrah">
+                </div>
+                <div class="kampus-slide">
+                    <img src="kampus2.jpeg" alt="Darul Hijrah">
+                </div>
+                <div class="kampus-slide">
+                    <img src="kampus3.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="kampus-slide">
+                    <img src="kampus4.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="kampus-slide">
+                    <img src="kampus5.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="kampus-slide">
+                    <img src="kampus6.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="kampus-slide">
+                    <img src="kampus7.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="kampus-slide">
+                    <img src="kampus8.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="kampus-slide">
+                    <img src="kampus9.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="kampus-slide">
+                    <img src="kampus10.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="kampus-slide">
+                    <img src="kampus11.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="kampus-slide">
+                    <img src="kampus12.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="kampus-slide">
+                    <img src="kampus13.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="kampus-slide">
+                    <img src="kampus14.jpg" alt="Darul Hijrah">
+                </div>
+                <div class="kampus-slide">
+                    <img src="kampus15.jpg" alt="Darul Hijrah">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const pondokTrack = document.getElementById("pondokTrack")
+        const pondokSlides = document.querySelectorAll(".pondok-slide")
+
+        const kampusTrack = document.getElementById("kampusTrack")
+        const kampusSlides = document.querySelectorAll(".kampus-slide")
+
+        let currentSlidePondok = 0
+        let currentSlideKampus = 0
+
+        function getVisibleSlides() {
+            if (window.innerWidth <= 768) {
+                return 2
+            }
+
+            return 5
+        }
+
+        function slidePondok() {
+
+            const visibleSlides = getVisibleSlides()
+            const totalSlides = pondokSlides.length
+            const maxSlide = totalSlides - visibleSlides
+
+            currentSlidePondok++
+
+            if (currentSlidePondok > maxSlide) {
+                currentSlidePondok = 0
+            }
+
+            const slideWidth = 100 / visibleSlides
+
+            pondokTrack.style.transform =
+                `translateX(-${currentSlidePondok * slideWidth}%)`
+        }
+
+        function slideKampus() {
+
+            const visibleSlides = getVisibleSlides()
+            const totalSlides = kampusSlides.length
+            const maxSlide = totalSlides - visibleSlides
+
+            currentSlideKampus++
+
+            if (currentSlideKampus > maxSlide) {
+                currentSlideKampus = 0
+            }
+
+            const slideWidth = 100 / visibleSlides
+
+            kampusTrack.style.transform =
+                `translateX(-${currentSlideKampus * slideWidth}%)`
+        }
+
+        setInterval(slidePondok, 2500)
+        setInterval(slideKampus, 2500)
+    </script>
 </body>
 </html>
