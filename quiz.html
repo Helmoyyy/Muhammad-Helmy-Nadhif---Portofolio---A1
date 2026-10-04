@@ -87,6 +87,7 @@
             border: 1px solid #000;
         }
 
+        
 
 
 
@@ -113,5 +114,44 @@
             </div>
         </div>
     </div>
+    <script>
+        function belumSiap() {
+            Swal.fire({
+                icon: "question",
+                title: "Kamu belum siap?",
+                text: "Apakah kamu yakin ingin kembali ke halaman Home?",
+                showCancelButton: true,
+                confirmButtonText: "Ya, kembali",
+                cancelButtonText: "Tetap di sini",
+                confirmButtonColor: "#000",
+                cancelButtonColor: "#000",
+                color: "#111"
+            }).then((result) => {
+
+                if (result.isConfirmed) {
+                    window.location.href = "beranda.html"
+                }
+            })
+        }
+
+        function sudahSiap() {
+            Swal.fire({
+                icon: "question",
+                title: "Apakah Kamu Yakin?",
+                text: "Dengan menekan tombol 'Ya, lanjut', kamu akan diarahkan ke halaman quiz. Apakah kamu yakin ingin melanjutkan?",
+                showCancelButton: true,
+                confirmButtonText: "Ya, lanjut",
+                cancelButtonText: "Tetap di sini",
+                confirmButtonColor: "#000",
+                cancelButtonColor: "#000",
+                color: "#111"
+            }).then((result) => {
+
+                if (result.isConfirmed) {
+                    window.location.href = "quiz1.html"
+                }
+            })
+        }
+    </script>
 </body>
 </html>
