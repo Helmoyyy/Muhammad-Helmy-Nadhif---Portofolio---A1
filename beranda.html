@@ -110,6 +110,10 @@
             cursor: pointer;
         }
 
+        .profile-image.pop {
+            transform: translateX(-50%) scale(1.1);
+        }
+
         .food-section {
             padding-top: 30px;
             padding-bottom: 40px;
@@ -635,6 +639,27 @@
 
     <footer>
         Muhammad Helmy Nadhif
-    </footer>       
+    </footer>    
+    
+    <script>
+        const images = [
+        "nadip1.png",
+        "nadip2.png",
+        "nadip3.png"
+    ]
+
+    let currentImage = 0
+
+    profileImage.addEventListener("click", function() {
+        profileImage.classList.add("pop")
+
+        setTimeout(function() {
+            currentImage = (currentImage + 1) % images.length
+            profileImage.src = images[currentImage]
+
+            profileImage.classList.remove("pop")
+        }, 200)
+    })
+    </script>
 </body>
 </html>
